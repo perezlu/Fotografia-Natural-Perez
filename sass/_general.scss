@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Tajawal:wght@500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #D2D6BA;
+    color: #2B2217;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img{
+    border: 2px solid #8a8d7abd;
+}

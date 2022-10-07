@@ -1,0 +1,16 @@
+.footergral{
+    grid-area: footer;
+    ul{
+        background-color: #8a8d7abd;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        list-style-type: none;
+        height: 50px;
+        a{
+            background-color: #8a8d7abd;
+            border: solid 2px;
+            border-color: #8a8d7abd;
+        }
+    }
+}

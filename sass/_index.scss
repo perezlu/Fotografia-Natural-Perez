@@ -1,0 +1,43 @@
+
+.index-about{
+    border: 1px solid #8a8d7abd;
+    padding: 20px;
+    grid-area: index-about;
+    display: flex;
+    flex-direction: column;
+    ul{
+        list-style-type: none;
+        padding: 1px;
+        li{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+#index-about-text{
+    grid-template-areas: index-about-text;
+}
+#index-about-image{
+    max-width: 500px;
+    max-height: 270px;
+    grid-template-areas: index-about-image;
+}
+
+.imagenes-index-paisajes{
+    grid-area: img-index-paisajes;
+}
+.imagenes-index-fauna{
+    grid-area: img-index-fauna;
+}
+
+/*envoltura solo del index.html*/
+.envoltura-ind{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "navbar" 
+    "index-about" 
+    "img-index-paisajes" 
+    "img-index-fauna" 
+    "footer";
+}

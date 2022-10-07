@@ -1,0 +1,49 @@
+/*aplica solo a about.html*/
+.container-about{
+    border: 1px solid #8a8d7abd;
+    padding: 20px;
+    grid-area: index-about;
+    display: flex;
+    flex-direction: column;
+    ul{
+        list-style-type: none;
+        li{
+            margin: 15px;
+        }
+    }
+}
+
+#text-about{
+    grid-template-areas: text-about;
+}
+#image-about{
+    max-width: 400px;
+    max-height: 400px;
+    grid-template-areas: image-about;
+}
+
+/*Aplica solo a contact.html*/
+
+.contacto-sect{
+    border: 1px solid #8a8d7abd;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    ul{
+        list-style-type: none;
+        padding: 0px;
+        li{
+            margin: 0px;
+        }
+    }
+}
+
+.mapa-contacto{
+    grid-template-areas: mapa-contacto;
+}
+.mapa-contacto iframe{
+    max-width: 250px;
+}
+.contacto-text{
+    grid-template-areas: contacto-text;
+}
