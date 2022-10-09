@@ -1,16 +1,19 @@
 .footergral{
     grid-area: footer;
+    background-color: $bgcDark;
+    div{
+        text-align: center;
+    }
     ul{
-        background-color: #8a8d7abd;
         display: flex;
         justify-content:space-around;
         align-items: center;
         list-style-type: none;
         height: 50px;
+        margin: 0;
         a{
-            background-color: #8a8d7abd;
             border: solid 2px;
-            border-color: #8a8d7abd;
+            border-color: $bgcDark;
         }
     }
 }

@@ -32,30 +32,36 @@ nav{
     overflow: hidden;
     position: relative;
     text-align: center;
-    h1{
+    .p1{
         position: absolute;
         top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
+        text-shadow: 0 0 10px $txtShadow;
         font-size: 4vw;
     }
-    h3{
+    .p2{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        text-shadow: 0 0 10px $txtShadow;
         font-size: 2vw;
     }
 }
 
-.portada h1:hover{ 
-    animation-name: text-scale-animation;
+.portada .p1:hover{ 
+    animation-name: text-color-animation;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
-@keyframes text-scale-animation{
+@keyframes text-color-animation{
     20%{
-        color:#8a8d7abd
+        color:#8a8d7abd;
+        scale: 1.02;
+    }
+    40%{
+        text-shadow: 0 0 8px $txtShadow;
     }
 }

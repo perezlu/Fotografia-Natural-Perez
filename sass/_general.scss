@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Tajawal:wght@500&display=swap');
 
+/*Variables*/
+$fontColor: #2B2217;
+$bgColor: #D2D6BA;
+$bgcDark: #8a8d7abd;
+$txtShadow: rgba(255, 255, 255, 0.781);
+
 * {
     padding: 0px;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-    background-color: #D2D6BA;
-    color: #2B2217;
+    color: $fontColor;
 }
 
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: $bgColor;
 }
 
 img{
-    border: 2px solid #8a8d7abd;
+    border: 2px solid $bgcDark;
 }

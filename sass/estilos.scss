@@ -6,7 +6,7 @@
 
 
 .imagenes-index-paisajes, .imagenes-index-fauna, .imagenes-fauna, .imagenes-paisajes{
-    border: 1px solid #8a8d7abd;
+    border: 1px solid $fontColor;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr;

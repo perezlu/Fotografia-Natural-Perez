@@ -1,12 +1,13 @@
 /*aplica solo a about.html*/
 .container-about{
-    border: 1px solid #8a8d7abd;
+    border: 1px solid $fontColor;
     padding: 20px;
     grid-area: index-about;
     display: flex;
     flex-direction: column;
     ul{
         list-style-type: none;
+        padding: 0;
         li{
             margin: 15px;
         }
@@ -22,10 +23,22 @@
     grid-template-areas: image-about;
 }
 
+h2{
+    margin-bottom: 20px;
+}
+#accordionFlushExample{
+    margin: 10px 50px 10px 50px;
+    button{
+        background-color: $bgColor;
+        border: 1px $fontColor;
+    }
+    
+}
+
 /*Aplica solo a contact.html*/
 
 .contacto-sect{
-    border: 1px solid #8a8d7abd;
+    border: 1px solid $fontColor;
     padding: 10px;
     display: flex;
     flex-direction: column;

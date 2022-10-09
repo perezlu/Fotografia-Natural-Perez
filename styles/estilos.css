@@ -1,10 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Tajawal:wght@500&display=swap");
+/*Variables*/
 * {
   padding: 0px;
   margin: 0;
   font-family: "Quicksand", sans-serif;
-  background-color: #D2D6BA;
   color: #2B2217;
 }
 
@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #D2D6BA;
 }
 
 img {
@@ -53,60 +54,73 @@ nav ul li:hover {
   position: relative;
   text-align: center;
 }
-.portada h1 {
+.portada .p1 {
   position: absolute;
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.781);
   font-size: 4vw;
 }
-.portada h3 {
+.portada .p2 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.781);
   font-size: 2vw;
 }
 
-.portada h1:hover {
-  -webkit-animation-name: text-scale-animation;
-          animation-name: text-scale-animation;
+.portada .p1:hover {
+  -webkit-animation-name: text-color-animation;
+          animation-name: text-color-animation;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes text-scale-animation {
+@-webkit-keyframes text-color-animation {
   20% {
     color: rgba(138, 141, 122, 0.7411764706);
+    scale: 1.02;
+  }
+  40% {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.781);
   }
 }
 
-@keyframes text-scale-animation {
+@keyframes text-color-animation {
   20% {
     color: rgba(138, 141, 122, 0.7411764706);
+    scale: 1.02;
+  }
+  40% {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.781);
   }
 }
 .footergral {
   grid-area: footer;
+  background-color: rgba(138, 141, 122, 0.7411764706);
+}
+.footergral div {
+  text-align: center;
 }
 .footergral ul {
-  background-color: rgba(138, 141, 122, 0.7411764706);
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
   height: 50px;
+  margin: 0;
 }
 .footergral ul a {
-  background-color: rgba(138, 141, 122, 0.7411764706);
   border: solid 2px;
   border-color: rgba(138, 141, 122, 0.7411764706);
 }
 
 .index-about {
-  border: 1px solid rgba(138, 141, 122, 0.7411764706);
+  border: 1px solid #2B2217;
   padding: 20px;
   grid-area: index-about;
   display: flex;
@@ -147,7 +161,7 @@ nav ul li:hover {
 
 /*aplica solo a about.html*/
 .container-about {
-  border: 1px solid rgba(138, 141, 122, 0.7411764706);
+  border: 1px solid #2B2217;
   padding: 20px;
   grid-area: index-about;
   display: flex;
@@ -155,6 +169,7 @@ nav ul li:hover {
 }
 .container-about ul {
   list-style-type: none;
+  padding: 0;
 }
 .container-about ul li {
   margin: 15px;
@@ -170,9 +185,21 @@ nav ul li:hover {
   grid-template-areas: image-about;
 }
 
+h2 {
+  margin-bottom: 20px;
+}
+
+#accordionFlushExample {
+  margin: 10px 50px 10px 50px;
+}
+#accordionFlushExample button {
+  background-color: #D2D6BA;
+  border: 1px #2B2217;
+}
+
 /*Aplica solo a contact.html*/
 .contacto-sect {
-  border: 1px solid rgba(138, 141, 122, 0.7411764706);
+  border: 1px solid #2B2217;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -198,7 +225,7 @@ nav ul li:hover {
 }
 
 .imagenes-index-paisajes, .imagenes-index-fauna, .imagenes-fauna, .imagenes-paisajes {
-  border: 1px solid rgba(138, 141, 122, 0.7411764706);
+  border: 1px solid #2B2217;
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr;
