@@ -3,6 +3,7 @@
     background-color: $bgcDark;
     div{
         text-align: center;
+        font-size: 15px;
     }
     ul{
         display: flex;
@@ -11,9 +12,15 @@
         list-style-type: none;
         height: 50px;
         margin: 0;
-        a{
-            border: solid 2px;
-            border-color: $bgcDark;
+
+        @media screen and (min-width:996px){
+            justify-content: center;
+        }
+        li{
+            @media screen and (min-width:996px){
+                margin-left: 25px;
+                margin-right: 25px;
+            }
         }
     }
 }

@@ -23,3 +23,12 @@ body{
 img{
     border: 2px solid $bgcDark;
 }
+
+@media screen and (min-width:996px){
+    h2{
+        font-size: 2.5vw;
+    }
+    p{
+        font-size: 1.5vw;
+    }
+}

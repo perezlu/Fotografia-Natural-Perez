@@ -1,4 +1,4 @@
-/*aplica solo a about.html*/
+/*aplica a about.html*/
 .container-about{
     border: 1px solid $fontColor;
     padding: 20px;
@@ -8,6 +8,15 @@
     ul{
         list-style-type: none;
         padding: 0;
+
+        @media screen and (min-width:996px){
+            list-style-type: none;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "image-about" "text-about";
+        }
         li{
             margin: 15px;
         }
@@ -35,7 +44,7 @@ h2{
     
 }
 
-/*Aplica solo a contact.html*/
+/*Aplica a contact.html*/
 
 .contacto-sect{
     border: 1px solid $fontColor;
@@ -45,18 +54,45 @@ h2{
     ul{
         list-style-type: none;
         padding: 0px;
+
+        @media screen and (min-width:996px){
+            list-style-type: none;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "mapa-contacto" "contacto-text";
+        }
         li{
             margin: 0px;
+
+            @media screen and (min-width:550px) {
+                margin: 15px;
+            }
         }
     }
+
+    @media screen and (min-width:550px) {
+        padding: 20px;
+    }
+
 }
 
 .mapa-contacto{
     grid-template-areas: mapa-contacto;
+    iframe{
+        max-width: 250px;
+        
+        @media screen and (min-width:550px) {
+            min-width: 550px;
+        }
+        @media screen and (min-width:996px){
+            max-width: 400px;
+        }
+    }
 }
-.mapa-contacto iframe{
-    max-width: 250px;
-}
+
 .contacto-text{
     grid-template-areas: contacto-text;
 }
+

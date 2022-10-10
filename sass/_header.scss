@@ -13,8 +13,21 @@ nav{
         font-size: 20px;
         font-weight: bold;
         height: 325px;
+
+        @media screen and (min-width:996px){
+                font-size: 1.7vw;
+                height: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:end;
+        }
+
         li{
             margin: 10px;
+
+            @media screen and (min-width:996px){
+                margin: 25px 10px 25px 10px;
+            }
         }
         li:hover{
             transform: translateY(10%);

@@ -8,11 +8,22 @@
     ul{
         list-style-type: none;
         padding: 1px;
+
+        @media screen and (min-width:996px){
+        list-style-type: none;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "index-about-image" "index-about-text";
+        }
         li{
             margin-bottom: 20px;
         }
     }
 }
+
+
 
 #index-about-text{
     grid-template-areas: index-about-text;
