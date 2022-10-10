@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Tajawal:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Tajawal:wght@500&display=swap");
 /*Variables*/
 * {
   padding: 0px;
   margin: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: "lato", sans-serif;
   color: #2B2217;
 }
 
@@ -12,6 +12,14 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: #D2D6BA;
+}
+
+p, div, span {
+  font-family: "tajawal", sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
 }
 
 img {
@@ -82,6 +90,7 @@ nav ul li:hover {
   transform: translate(-50%, -50%);
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.781);
   font-size: 4vw;
+  font-weight: bold;
 }
 .portada .p2 {
   position: absolute;
@@ -90,6 +99,7 @@ nav ul li:hover {
   transform: translate(-50%, -50%);
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.781);
   font-size: 2vw;
+  font-weight: bold;
 }
 
 .portada .p1:hover {
@@ -166,6 +176,7 @@ nav ul li:hover {
     gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "index-about-image" "index-about-text";
+    padding: 30px;
   }
 }
 .index-about ul li {
@@ -190,6 +201,20 @@ nav ul li:hover {
   grid-area: img-index-fauna;
 }
 
+h2 {
+  margin-left: 5px;
+}
+@media screen and (min-width: 996px) {
+  h2 {
+    margin: 15px;
+  }
+}
+h2 a {
+  color: #2B2217;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 /*envoltura solo del index.html*/
 .envoltura-ind {
   display: grid;
@@ -211,7 +236,6 @@ nav ul li:hover {
 }
 @media screen and (min-width: 996px) {
   .container-about ul {
-    list-style-type: none;
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
@@ -229,19 +253,26 @@ nav ul li:hover {
 #image-about {
   max-width: 400px;
   max-height: 400px;
+  justify-content: center;
   grid-template-areas: image-about;
-}
-
-h2 {
-  margin-bottom: 20px;
 }
 
 #accordionFlushExample {
   margin: 10px 50px 10px 50px;
 }
+#accordionFlushExample h2 {
+  margin: 0px;
+}
 #accordionFlushExample button {
   background-color: #D2D6BA;
-  border: 1px #2B2217;
+  border: 1px solid #2B2217;
+  border-radius: 2%;
+}
+#accordionFlushExample .accordion-body {
+  background-color: rgba(138, 141, 122, 0.7411764706);
+}
+#accordionFlushExample .accordion-body span {
+  display: block;
 }
 
 /*Aplica a contact.html*/
@@ -282,21 +313,48 @@ h2 {
   grid-template-areas: mapa-contacto;
 }
 .mapa-contacto iframe {
-  max-width: 250px;
+  max-width: 340px;
 }
 @media screen and (min-width: 550px) {
   .mapa-contacto iframe {
-    min-width: 550px;
+    max-width: 500px;
   }
 }
-@media screen and (min-width: 996px) {
+@media screen and (min-width: 1200px) {
   .mapa-contacto iframe {
-    max-width: 400px;
+    max-width: 700px;
   }
 }
 
 .contacto-text {
   grid-template-areas: contacto-text;
+}
+.contacto-text span {
+  display: block;
+  font-size: 25px;
+}
+@media screen and (min-width: 996px) {
+  .contacto-text {
+    margin-top: 50px;
+  }
+}
+
+h3 {
+  margin: 10px;
+}
+
+form {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid rgba(138, 141, 122, 0.7411764706);
+}
+@media screen and (min-width: 996px) {
+  form {
+    margin: 20px 20%;
+  }
+}
+form div {
+  margin-bottom: 10px;
 }
 
 .imagenes-index-paisajes, .imagenes-index-fauna, .imagenes-fauna, .imagenes-paisajes {

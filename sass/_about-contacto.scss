@@ -10,7 +10,6 @@
         padding: 0;
 
         @media screen and (min-width:996px){
-            list-style-type: none;
             display: grid;
             gap: 20px;
             grid-template-columns: 1fr 1fr;
@@ -29,23 +28,32 @@
 #image-about{
     max-width: 400px;
     max-height: 400px;
+    justify-content: center;
     grid-template-areas: image-about;
 }
 
-h2{
-    margin-bottom: 20px;
-}
 #accordionFlushExample{
     margin: 10px 50px 10px 50px;
+    h2{
+        margin: 0px;
+    }
     button{
         background-color: $bgColor;
-        border: 1px $fontColor;
+        border: 1px solid $fontColor;
+        border-radius: 2%;
+    }
+    .accordion-body{
+        background-color: $bgcDark;
+        span{
+            display: block;
+        }
     }
     
 }
 
-/*Aplica a contact.html*/
 
+
+/*Aplica a contact.html*/
 .contacto-sect{
     border: 1px solid $fontColor;
     padding: 10px;
@@ -72,7 +80,7 @@ h2{
         }
     }
 
-    @media screen and (min-width:550px) {
+    @media screen and (min-width:550px){
         padding: 20px;
     }
 
@@ -81,18 +89,38 @@ h2{
 .mapa-contacto{
     grid-template-areas: mapa-contacto;
     iframe{
-        max-width: 250px;
+        max-width: 340px;
         
-        @media screen and (min-width:550px) {
-            min-width: 550px;
+        @media screen and (min-width:550px){
+            max-width: 500px;
         }
-        @media screen and (min-width:996px){
-            max-width: 400px;
+        @media screen and (min-width:1200px){
+            max-width: 700px;
         }
     }
 }
-
 .contacto-text{
     grid-template-areas: contacto-text;
-}
+    span{
+        display: block;
+        font-size: 25px;
+    }
 
+    @media screen and (min-width:996px) {
+        margin-top: 50px;
+    }
+}
+h3{
+    margin: 10px;
+}
+form{
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid $bgcDark;
+    @media screen and (min-width:996px) {
+        margin: 20px 20%;
+    }
+    div{
+        margin-bottom: 10px;
+    }
+}

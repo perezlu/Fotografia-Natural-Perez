@@ -19,7 +19,7 @@ nav{
                 height: 20px;
                     display: flex;
                     flex-direction: row;
-                    justify-content:end;
+                    justify-content: end;
         }
 
         li{
@@ -52,6 +52,7 @@ nav{
         transform: translate(-50%, -50%);
         text-shadow: 0 0 10px $txtShadow;
         font-size: 4vw;
+        font-weight: bold;
     }
     .p2{
         position: absolute;
@@ -60,6 +61,7 @@ nav{
         transform: translate(-50%, -50%);
         text-shadow: 0 0 10px $txtShadow;
         font-size: 2vw;
+        font-weight: bold;
     }
 }
 

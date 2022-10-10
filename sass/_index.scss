@@ -16,6 +16,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
         "index-about-image" "index-about-text";
+        padding: 30px;
         }
         li{
             margin-bottom: 20px;
@@ -40,6 +41,19 @@
 .imagenes-index-fauna{
     grid-area: img-index-fauna;
 }
+
+h2{
+    margin-left: 5px;
+    @media screen and (min-width: 996px) {
+        margin: 15px;
+    }
+    a{
+    color: $fontColor;
+    font-weight: bold;
+    text-decoration: none;
+}
+}
+    
 
 /*envoltura solo del index.html*/
 .envoltura-ind{
