@@ -28,22 +28,17 @@
 #image-about{
     justify-content: center;
     grid-template-areas: image-about;
-    img{
-        @media screen and (min-width:1050px) {
-            width:500px;
-        }
-    }
 }
 
 #accordionFlushExample{
-    margin: 10px 50px 10px 50px;
+    margin: 40px 50px 40px 50px;
     h2{
         margin: 0px;
     }
     button{
         background-color: $bgColor;
         border: 1px solid $fontColor;
-        border-radius: 2%;
+
     }
     .accordion-body{
         background-color: $bgcDark;
@@ -113,17 +108,20 @@
         margin-top: 50px;
     }
 }
-h3{
-    margin: 10px;
-}
-form{
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid $bgcDark;
-    @media screen and (min-width:996px) {
-        margin: 20px 20%;
-    }
-    div{
-        margin-bottom: 10px;
+.formulario{
+    padding: 20px;
+    form{
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid $bgcDark;
+        @media screen and (min-width:996px) {
+            margin: 20px 20%;
+        }
+        div{
+            margin-bottom: 10px;
+        }
+        .form-control{
+            background-color: $txtShadow;
+        }
     }
 }

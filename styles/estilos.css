@@ -19,7 +19,21 @@ p, div, span {
 }
 
 h2 {
-  margin-bottom: 20px;
+  margin-left: 5px;
+}
+@media screen and (min-width: 996px) {
+  h2 {
+    margin: 15px;
+  }
+}
+h2 a {
+  color: #2B2217;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h3 {
+  margin: 10px;
 }
 
 img {
@@ -33,10 +47,10 @@ img {
 
 @media screen and (min-width: 996px) {
   h2 {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
   }
   p {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
   }
 }
 nav {
@@ -169,6 +183,14 @@ nav ul li:hover {
   list-style-type: none;
   padding: 1px;
 }
+.index-about ul #index-about-text {
+  grid-template-areas: index-about-text;
+}
+.index-about ul #index-about-image {
+  max-width: 800px;
+  max-height: 600px;
+  grid-template-areas: index-about-image;
+}
 @media screen and (min-width: 996px) {
   .index-about ul {
     list-style-type: none;
@@ -178,19 +200,25 @@ nav ul li:hover {
     grid-template-areas: "index-about-image" "index-about-text";
     padding: 30px;
   }
+  .index-about ul h3 {
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+  .index-about ul #index-about-text {
+    padding: 40px;
+  }
 }
 .index-about ul li {
   margin-bottom: 20px;
 }
-
-#index-about-text {
-  grid-template-areas: index-about-text;
+.index-about ul li .btn {
+  background-color: rgba(138, 141, 122, 0.7411764706);
+  color: #2B2217;
 }
-
-#index-about-image {
-  max-width: 900px;
-  max-height: 600px;
-  grid-template-areas: index-about-image;
+@media screen and (min-width: 996px) {
+  .index-about ul li .btn {
+    margin-left: 40px;
+  }
 }
 
 .imagenes-index-paisajes {
@@ -199,20 +227,6 @@ nav ul li:hover {
 
 .imagenes-index-fauna {
   grid-area: img-index-fauna;
-}
-
-h2 {
-  margin-left: 5px;
-}
-@media screen and (min-width: 996px) {
-  h2 {
-    margin: 15px;
-  }
-}
-h2 a {
-  color: #2B2217;
-  font-weight: bold;
-  text-decoration: none;
 }
 
 /*envoltura solo del index.html*/
@@ -254,14 +268,9 @@ h2 a {
   justify-content: center;
   grid-template-areas: image-about;
 }
-@media screen and (min-width: 1050px) {
-  #image-about img {
-    width: 500px;
-  }
-}
 
 #accordionFlushExample {
-  margin: 10px 50px 10px 50px;
+  margin: 40px 50px 40px 50px;
 }
 #accordionFlushExample h2 {
   margin: 0px;
@@ -269,7 +278,6 @@ h2 a {
 #accordionFlushExample button {
   background-color: #D2D6BA;
   border: 1px solid #2B2217;
-  border-radius: 2%;
 }
 #accordionFlushExample .accordion-body {
   background-color: rgba(138, 141, 122, 0.7411764706);
@@ -342,22 +350,24 @@ h2 a {
   }
 }
 
-h3 {
-  margin: 10px;
+.formulario {
+  padding: 20px;
 }
-
-form {
+.formulario form {
   margin: 20px;
   padding: 10px;
   border: 1px solid rgba(138, 141, 122, 0.7411764706);
 }
 @media screen and (min-width: 996px) {
-  form {
+  .formulario form {
     margin: 20px 20%;
   }
 }
-form div {
+.formulario form div {
   margin-bottom: 10px;
+}
+.formulario form .form-control {
+  background-color: rgba(255, 255, 255, 0.781);
 }
 
 .imagenes-index-paisajes, .imagenes-index-fauna, .imagenes-fauna, .imagenes-paisajes {
@@ -367,10 +377,16 @@ form div {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   justify-items: center;
+  list-style-type: none;
 }
 .imagenes-index-paisajes .responsive, .imagenes-index-fauna .responsive, .imagenes-fauna .responsive, .imagenes-paisajes .responsive {
   min-width: 300px;
   height: auto;
+}
+.imagenes-index-paisajes p, .imagenes-index-fauna p, .imagenes-fauna p, .imagenes-paisajes p {
+  background-color: rgba(138, 141, 122, 0.7411764706);
+  text-align: center;
+  font-size: 15px;
 }
 @media screen and (min-width: 550px) {
   .imagenes-index-paisajes, .imagenes-index-fauna, .imagenes-fauna, .imagenes-paisajes {

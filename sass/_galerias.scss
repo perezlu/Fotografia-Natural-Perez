@@ -5,11 +5,16 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     justify-items: center;
+    list-style-type: none;
     .responsive{
         min-width: 300px ;
         height: auto;
     }
-    
+    p{
+        background-color: $bgcDark;
+        text-align: center;
+        font-size: 15px;
+    }
     @media screen and (min-width:550px){
         grid-template-columns: 1fr 1fr;
     }
