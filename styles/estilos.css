@@ -26,6 +26,11 @@ img {
   border: 2px solid rgba(138, 141, 122, 0.7411764706);
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (min-width: 996px) {
   h2 {
     font-size: 2.5vw;
@@ -71,11 +76,6 @@ nav ul li {
 nav ul li:hover {
   transform: translateY(10%);
   transition: transform 0.2s;
-}
-
-.responsive {
-  width: 100%;
-  height: auto;
 }
 
 .portada {
@@ -188,8 +188,8 @@ nav ul li:hover {
 }
 
 #index-about-image {
-  max-width: 500px;
-  max-height: 270px;
+  max-width: 900px;
+  max-height: 600px;
   grid-template-areas: index-about-image;
 }
 
@@ -251,10 +251,13 @@ h2 a {
 }
 
 #image-about {
-  max-width: 400px;
-  max-height: 400px;
   justify-content: center;
   grid-template-areas: image-about;
+}
+@media screen and (min-width: 1050px) {
+  #image-about img {
+    width: 500px;
+  }
 }
 
 #accordionFlushExample {
@@ -364,6 +367,10 @@ form div {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   justify-items: center;
+}
+.imagenes-index-paisajes .responsive, .imagenes-index-fauna .responsive, .imagenes-fauna .responsive, .imagenes-paisajes .responsive {
+  min-width: 300px;
+  height: auto;
 }
 @media screen and (min-width: 550px) {
   .imagenes-index-paisajes, .imagenes-index-fauna, .imagenes-fauna, .imagenes-paisajes {

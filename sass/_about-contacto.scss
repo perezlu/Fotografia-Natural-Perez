@@ -26,10 +26,13 @@
     grid-template-areas: text-about;
 }
 #image-about{
-    max-width: 400px;
-    max-height: 400px;
     justify-content: center;
     grid-template-areas: image-about;
+    img{
+        @media screen and (min-width:1050px) {
+            width:500px;
+        }
+    }
 }
 
 #accordionFlushExample{
