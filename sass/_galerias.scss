@@ -1,5 +1,4 @@
 .imagenes-index-paisajes, .imagenes-index-fauna, .imagenes-fauna, .imagenes-paisajes{
-    border: 1px solid $fontColor;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
@@ -24,4 +23,7 @@
     @media screen and (min-width:1400px){
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+}
+.imagenes-fauna, .imagenes-paisajes{
+    border: 1px solid $fontColor;
 }

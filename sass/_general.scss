@@ -23,6 +23,11 @@ body{
 p, div, span{
     font-family: "tajawal", sans-serif;
 }
+
+span{
+    display: inline-block;
+}
+
 h2{
     margin-left: 5px;
     @media screen and (min-width: 996px) {

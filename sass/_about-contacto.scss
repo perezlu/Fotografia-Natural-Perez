@@ -32,21 +32,23 @@
 
 #accordionFlushExample{
     margin: 40px 50px 40px 50px;
-    h2{
-        margin: 0px;
-    }
-    button{
-        background-color: $bgColor;
-        border: 1px solid $fontColor;
-
-    }
-    .accordion-body{
-        background-color: $bgcDark;
-        span{
-            display: block;
+    .accordion-item{
+        h2{
+            margin: 0px;
+        }
+        button{
+            background-color: $bgColor;
+            border: 1px solid $fontColor;
+            text-decoration: $bgcDark;
+        }
+        .accordion-body{
+            background-color: $bgcDark;
+            border: 1px solid $fontColor;
+            ul{
+                list-style-type: circle;
+            }
         }
     }
-    
 }
 
 
@@ -109,7 +111,11 @@
     }
 }
 .formulario{
-    padding: 20px;
+    padding: 10px;
+    @media screen and (min-width:996px) {
+            padding: 5px 20px 40px 20px;
+    }
+
     form{
         margin: 20px;
         padding: 10px;
