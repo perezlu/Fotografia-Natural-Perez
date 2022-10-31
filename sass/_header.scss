@@ -19,7 +19,7 @@ nav{
         align-items: center;
         font-size: 20px;
         font-weight: bold;
-        height: 325px;
+        height: fit-content;
         @media screen and (min-width:996px){
                 font-size: 1.7vw;
                 height: 20px;
@@ -28,13 +28,22 @@ nav{
                     justify-content: end;
         }
         li{
+            width: 100%;
             margin: 10px;
+            padding: 0;
+            border-radius: 20px;
             @media screen and (min-width:996px){
                 margin: 25px 10px 25px 10px;
+                padding: 0;
+            }
+            a{
+                white-space: nowrap;
+                text-align: center;
             }
         }
         li:hover{
-            transform: translateY(10%);
+            transform: translateY(5%);
+            background-color: $bgHover;
             transition: transform .2s;
         }
     }
@@ -67,6 +76,11 @@ nav{
 }
 
 .portada .p1:hover{ 
+    animation-name: text-color-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.navbar-brand:hover{ 
     animation-name: text-color-animation;
     animation-duration: 2s;
     animation-iteration-count: infinite;

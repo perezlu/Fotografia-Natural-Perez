@@ -14,8 +14,17 @@ body {
   background-color: #D2D6BA;
 }
 
+main {
+  z-index: 0;
+}
+
 p, div, span {
   font-family: "tajawal", sans-serif;
+}
+@media screen and (min-width: 996px) {
+  p, div, span {
+    font-size: 1.2vw;
+  }
 }
 
 span {
@@ -28,6 +37,7 @@ h2 {
 @media screen and (min-width: 996px) {
   h2 {
     margin: 15px;
+    font-size: 2.3vw;
   }
 }
 h2 a {
@@ -49,14 +59,16 @@ img {
   height: auto;
 }
 
-@media screen and (min-width: 996px) {
-  h2 {
-    font-size: 2.3vw;
-  }
-  p {
-    font-size: 1.3vw;
-  }
+#boton {
+  background-color: rgba(138, 141, 122, 0.7411764706);
+  color: #2B2217 !important;
 }
+
+#boton:hover {
+  background-color: rgba(100, 102, 88, 0.7411764706);
+  transition: transform 0.2s;
+}
+
 nav {
   grid-area: navbar;
   background-color: rgba(138, 141, 122, 0.7411764706);
@@ -79,7 +91,9 @@ nav ul {
   align-items: center;
   font-size: 20px;
   font-weight: bold;
-  height: 325px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 @media screen and (min-width: 996px) {
   nav ul {
@@ -91,15 +105,24 @@ nav ul {
   }
 }
 nav ul li {
+  width: 100%;
   margin: 10px;
+  padding: 0;
+  border-radius: 20px;
 }
 @media screen and (min-width: 996px) {
   nav ul li {
     margin: 25px 10px 25px 10px;
+    padding: 0;
   }
 }
+nav ul li a {
+  white-space: nowrap;
+  text-align: center;
+}
 nav ul li:hover {
-  transform: translateY(10%);
+  transform: translateY(5%);
+  background-color: rgba(100, 102, 88, 0.7411764706);
   transition: transform 0.2s;
 }
 
@@ -128,6 +151,15 @@ nav ul li:hover {
 }
 
 .portada .p1:hover {
+  -webkit-animation-name: text-color-animation;
+          animation-name: text-color-animation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.navbar-brand:hover {
   -webkit-animation-name: text-color-animation;
           animation-name: text-color-animation;
   -webkit-animation-duration: 2s;
@@ -225,10 +257,6 @@ nav ul li:hover {
 .index-about ul li {
   margin-bottom: 20px;
 }
-.index-about ul li .btn {
-  background-color: rgba(138, 141, 122, 0.7411764706);
-  color: #2B2217;
-}
 @media screen and (min-width: 996px) {
   .index-about ul li .btn {
     margin-left: 40px;
@@ -246,8 +274,23 @@ nav ul li:hover {
 .galeria-index {
   border: 1px solid #2B2217;
 }
-.galeria-index button {
-  margin: 20px;
+.galeria-index .galeria {
+  border: none;
+}
+@media screen and (min-width: 996px) {
+  .galeria-index .btn {
+    margin: 0 40px 40px;
+  }
+}
+
+.btn {
+  background-color: rgba(138, 141, 122, 0.7411764706);
+  color: #2B2217;
+}
+
+.btn:hover {
+  transform: color rgba(138, 141, 122, 0.7411764706);
+  transition: transform 0.2s;
 }
 
 /*envoltura solo del index.html*/
@@ -399,7 +442,8 @@ nav ul li:hover {
   background-color: rgba(255, 255, 255, 0.781);
 }
 
-.imagenes-index-paisajes, .imagenes-index-fauna, .imagenes-fauna, .imagenes-paisajes {
+.galeria {
+  border: 1px solid #2B2217;
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr;
@@ -407,31 +451,31 @@ nav ul li:hover {
   justify-items: center;
   list-style-type: none;
 }
-.imagenes-index-paisajes .responsive, .imagenes-index-fauna .responsive, .imagenes-fauna .responsive, .imagenes-paisajes .responsive {
+.galeria .responsive {
   min-width: 300px;
-  height: auto;
+  height: 90%;
 }
-.imagenes-index-paisajes p, .imagenes-index-fauna p, .imagenes-fauna p, .imagenes-paisajes p {
+.galeria p {
   background-color: rgba(138, 141, 122, 0.7411764706);
   text-align: center;
   font-size: 15px;
 }
 @media screen and (min-width: 550px) {
-  .imagenes-index-paisajes, .imagenes-index-fauna, .imagenes-fauna, .imagenes-paisajes {
+  .galeria {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (min-width: 996px) {
-  .imagenes-index-paisajes, .imagenes-index-fauna, .imagenes-fauna, .imagenes-paisajes {
+  .galeria {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media screen and (min-width: 1400px) {
-  .imagenes-index-paisajes, .imagenes-index-fauna, .imagenes-fauna, .imagenes-paisajes {
+  .galeria {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
-.imagenes-fauna, .imagenes-paisajes {
-  border: 1px solid #2B2217;
+.galeria-fauna h1, .galeria-paisajes h1 {
+  margin-top: 30px;
 }/*# sourceMappingURL=estilos.css.map */
