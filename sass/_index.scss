@@ -58,19 +58,11 @@
         border: none;
     }
     .btn{
-        @media screen and (min-width:996px) {
-            margin: 0 40px 40px;
+            margin: 0 20px 40px;
         }
-    }
+    
 }
-.btn{
-    background-color: $bgcDark;
-    color: $fontColor;
-}
-.btn:hover{
-    transform: color $bgcDark;
-    transition: transform .2s;
-}
+
 
 /*envoltura solo del index.html*/
 .envoltura-ind{

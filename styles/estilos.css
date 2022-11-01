@@ -72,8 +72,7 @@ img {
 nav {
   grid-area: navbar;
   background-color: rgba(138, 141, 122, 0.7411764706);
-  border-radius: 0 0 25px 25px;
-  margin-bottom: 10px;
+  border-bottom: solid 1px #2B2217;
 }
 nav .navbar-brand {
   font-family: "Tajawal", sans-serif;
@@ -277,20 +276,8 @@ nav ul li:hover {
 .galeria-index .galeria {
   border: none;
 }
-@media screen and (min-width: 996px) {
-  .galeria-index .btn {
-    margin: 0 40px 40px;
-  }
-}
-
-.btn {
-  background-color: rgba(138, 141, 122, 0.7411764706);
-  color: #2B2217;
-}
-
-.btn:hover {
-  transform: color rgba(138, 141, 122, 0.7411764706);
-  transition: transform 0.2s;
+.galeria-index .btn {
+  margin: 0 20px 40px;
 }
 
 /*envoltura solo del index.html*/
